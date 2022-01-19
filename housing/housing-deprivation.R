@@ -1,5 +1,5 @@
 ### BIMD // HOUSING DEPRIVATION
-### 10/01/2022
+### 19/01/2022
 
 ## required packages
 library(BelgiumMaps.StatBel)
@@ -25,7 +25,7 @@ sum(hdi_2011$CD_REFNIS_SECTOR %in% BE_ADMIN_SECTORS@data$CD_REFNIS_SECTOR)
 ## plot results
 labs <- c("10 (Least deprived)", 9:2, "1 (Most deprived)")
 
-png("hdi-2011-deciles.png", 10, 10, units = "in", res = 300)
+png("hdi-2011-deciles.png", 10, 8, units = "in", res = 300)
 sp::spplot(
   BE_ADMIN_SECTORS, "DECILE",
   main = "Housing Deprivation by Statistical Sector, Belgium, 2011",
